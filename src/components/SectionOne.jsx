@@ -16,42 +16,48 @@ const SectionOne = () => {
     <section className='max-w-[1370px] mx-auto flex justify-between'>
       <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper w-[700px] ml-0!">
         <SwiperSlide>
-          <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Новые поступления
+          <h1 className='font-[500] text-[55px] w-[630px] leading-[60.5px] mt-[186px] mb-[45px]'>Новые поступления
             в этом сезоне</h1>
-          <div className='flex w-[385px]'>
-            <p className='text-[20px] text-end'>Утонченные сочетания и бархатные 
-              оттенки - вот то, что вы искали в этом 
-              сезоне. Время исследовать.</p>
-          </div>
-          <div className='flex ml-[130px] mt-[52px] '>
-            <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
-              <img src={Arrow} alt="" />
-            </button>
-            <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+          <div className='flex flex-col items-end w-[400px]'>
+            <div className='flex w-[365px]'>
+              <p className='text-[20px] text-end'>Утонченные сочетания и бархатные
+                оттенки - вот то, что вы искали в этом
+                сезоне. Время исследовать.</p>
+            </div>
+            <div className='flex ml-[130px] mt-[52px] '>
+              <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
+                <img src={Arrow} alt="" />
+              </button>
+              <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Что-то новенькое. Мы заждались тебя.</h1>
-          <div className='flex w-[385px]'>
-            <p className='text-[20px] text-end'>Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!</p>
-          </div>
-          <div className='flex ml-[130px] mt-[52px] '>
-            <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
-              <img src={Arrow} alt="" />
-            </button>
-            <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+          <div className='flex flex-col items-end w-[400px]'>
+            <div className='flex w-[365px]'>
+              <p className='text-[20px] text-end'>Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!</p>
+            </div>
+            <div className='flex ml-[130px] mt-[52px] '>
+              <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
+                <img src={Arrow} alt="" />
+              </button>
+              <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className='mb-[170px]'>
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Включай новый сезон с WOMAZING</h1>
-          <div className='flex w-[385px]'>
-            <p className='text-[20px] text-end'>Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров</p>
-          </div>
-          <div className='flex ml-[130px] mt-[52px] '>
-            <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
-              <img src={Arrow} alt="" />
-            </button>
-            <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+          <div className='flex flex-col items-end w-[400px]'>
+            <div className='flex w-[365px]'>
+              <p className='text-[20px] text-end'>Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров</p>
+            </div>
+            <div className='flex ml-[130px] mt-[52px] '>
+              <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
+                <img src={Arrow} alt="" />
+              </button>
+              <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+            </div>
           </div>
         </SwiperSlide>
       </Swiper>
