@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: "Raleway";
+}
+
+.swiper-pagination-bullet{
+    width: 30px !important;
+    height: 4px !important;
+    border-radius: 0 !important; 
+}
+
+.swiper-pagination-bullet-active{
+    background-color: black !important;
+}
+
+.custom-bullet-active{
+    background-color: white !important;
+    opacity: 1 !important;
+}
+
+.custom-bullet{
+    background-color: #FFFFFF5C !important;
+}
