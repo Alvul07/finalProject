@@ -19,8 +19,8 @@ const SectionOne = () => {
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Новые поступления
             в этом сезоне</h1>
           <div className='flex w-[440px]'>
-            <p className='text-[20px] text-end'>Утонченные сочетания и бархатные <br />
-              оттенки - вот то, что вы искали в этом <br />
+            <p className='text-[20px] text-end'>Утонченные сочетания и бархатные 
+              оттенки - вот то, что вы искали в этом 
               сезоне. Время исследовать.</p>
           </div>
           <div className='flex ml-[130px] mt-[52px] '>
