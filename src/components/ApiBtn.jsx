@@ -4,17 +4,21 @@ import { NavLink } from 'react-router-dom'
 const ApiBtn = () => {
     return (
         <div className="flex justify-center gap-[14px] mb-2">
-            <button
-                className="size-[40px] border border-black text-black text-[17px] font-[500]"
-            >
-                <NavLink className={({ isActive }) => isActive ? 'border border-solid border-black bg-black text-white px-[13.8px] py-[6.5px]' : ''} to='/shop'>1</NavLink>
-            </button>
 
-            <button
-                className="size-[40px] border border-black text-black text-[17px] font-[500]"
-            >
-                <NavLink className={({ isActive }) => isActive ? 'border border-solid border-black bg-black text-white px-[12.8px] py-[6px]' : ''} to='/secondApi'>2</NavLink>
-            </button>
+
+            <NavLink className={({ isActive }) => isActive ? 'border border-solid border-black bg-black text-white size-[40px] flex items-center justify-center'
+             : 'flex items-center justify-center border border-solid border-black size-[40px]'} to='/shop'>
+                <button>
+                    1
+                </button>
+            </NavLink>
+
+            <NavLink className={({ isActive }) => isActive ? 'border border-solid border-black bg-black text-white size-[40px] flex items-center justify-center'
+             : 'flex items-center justify-center border border-solid border-black size-[40px]'} to='/secondApi'>
+                <button>
+                    2
+                </button>
+            </NavLink>
         </div>
     )
 }

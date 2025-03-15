@@ -23,3 +23,7 @@ const Shop = () => {
 }
 
 export default Shop;
+
+//git add .
+//git commit -m "add new page"
+//git push

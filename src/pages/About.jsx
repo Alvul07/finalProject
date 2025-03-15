@@ -34,7 +34,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className='flex items-center'>
+          <div className='flex items-center justify-between'>
             <div>
               <h3 className='font-[500] text-[25px]'>Магия в деталях</h3>
               <p className='text-[17px] font-[500] mt-[46px]'>
@@ -54,12 +54,13 @@ const About = () => {
             </div>
             <img src={Girl2} alt="" />
           </div>
-          <GreenBtn className='w-[260px] mx-auto'>
+          <Link to='/shop'><GreenBtn className='w-[260px] mx-auto'>
             <Link to='/shop'>Перейти в магазин</Link>
           </GreenBtn>
+          </Link>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

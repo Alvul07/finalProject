@@ -4,6 +4,7 @@ import Sell2 from '../assets/sell2.png'
 import Sell3 from '../assets/sell3.png'
 import WhiteBtn from './WhiteBtn'
 import ArrowR from '../assets/arrowR.svg'
+import { Link } from 'react-router-dom'
 
 
 const SectionTwo = () => {
@@ -49,7 +50,9 @@ const SectionTwo = () => {
                 </div>
             </div>
             <div className='flex justify-center mt-[65px]'>
+                <Link to='/shop'>
                 <WhiteBtn className='w-[243px] h-[68px]'>Открыть магазин</WhiteBtn>
+                </Link>
             </div>
         </section>
     )
