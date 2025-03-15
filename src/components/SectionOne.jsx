@@ -18,7 +18,7 @@ const SectionOne = () => {
         <SwiperSlide>
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Новые поступления
             в этом сезоне</h1>
-          <div className='flex w-[440px]'>
+          <div className='flex w-[385px]'>
             <p className='text-[20px] text-end'>Утонченные сочетания и бархатные 
               оттенки - вот то, что вы искали в этом 
               сезоне. Время исследовать.</p>
@@ -32,7 +32,7 @@ const SectionOne = () => {
         </SwiperSlide>
         <SwiperSlide>
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Что-то новенькое. Мы заждались тебя.</h1>
-          <div className='flex w-[440px]'>
+          <div className='flex w-[385px]'>
             <p className='text-[20px] text-end'>Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!</p>
           </div>
           <div className='flex ml-[130px] mt-[52px] '>
@@ -44,7 +44,7 @@ const SectionOne = () => {
         </SwiperSlide>
         <SwiperSlide className='mb-[170px]'>
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Включай новый сезон с WOMAZING</h1>
-          <div className='flex w-[440px]'>
+          <div className='flex w-[385px]'>
             <p className='text-[20px] text-end'>Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров</p>
           </div>
           <div className='flex ml-[130px] mt-[52px] '>
