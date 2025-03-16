@@ -8,6 +8,10 @@ import Api from "./components/Api"
 import ShopSectionApi from "./components/ShopSectionApi"
 import ShopSectionSide from "./components/ShopSectionSide"
 import Contacts from "./pages/Contacts"
+import Coat from "./components/Coat"
+import Trousers from "./components/Trousers"
+import Jacket from "./components/Jacket"
+import SweatShirts from "./components/SweatShirts"
 
 function App() {
 
@@ -22,6 +26,10 @@ function App() {
           <Route path="*" element={<NotFound/>} />
           <Route path="/secondApi" element={<ShopSectionSide/>} />
           <Route path="/api" element={<Api/>}/>
+          <Route path="/coat" element={<Coat/>} />
+          <Route path="/trousers" element={<Trousers/>} />
+          <Route path="/jacket" element={<Jacket/>} />
+          <Route path="/sweatShirts" element={<SweatShirts/>} />
         </Routes>
       </Router>
     </>

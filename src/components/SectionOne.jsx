@@ -16,7 +16,7 @@ const SectionOne = () => {
     <section className='max-w-[1370px] mx-auto flex justify-between'>
       <Swiper pagination={{ clickable: true }} modules={[Pagination]} className="mySwiper w-[700px] ml-0!">
         <SwiperSlide>
-          <h1 className='font-[500] text-[55px] w-[630px] leading-[60.5px] mt-[186px] mb-[45px]'>Новые поступления
+          <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Новые поступления
             в этом сезоне</h1>
           <div className='flex flex-col items-end w-[400px]'>
             <div className='flex w-[365px]'>
@@ -65,7 +65,7 @@ const SectionOne = () => {
       <div className='mt-[41px] relative'>
         <img className='w-[420px] h-[646px] object-cover flex justify-end ' src={bigImg} alt="" />
         <img className='absolute top-[123px] left-[315px]' src={img2} alt="" />
-        <img className='absolute bottom-[26px] right-[340px]' src={img3} alt="" />
+        <img className='absolute bottom-[61px] right-[340px]' src={img3} alt="" />
       </div>
 
     </section>

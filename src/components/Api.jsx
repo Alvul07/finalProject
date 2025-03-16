@@ -48,7 +48,7 @@ const Api = () => {
                     {imgs.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <div className='flex gap-[10px] justify-center text-[15px] font-[500]'>
                                 <p className='text-[#9C9C9C] line-through'>{item.price}</p>
                                 <p className='text-[#998E78]'>{item.value}</p>
@@ -60,7 +60,7 @@ const Api = () => {
                     {imgs2.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
                         </div>
                     )
@@ -68,7 +68,7 @@ const Api = () => {
                     {imgs3.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
                         </div>
                     )
@@ -79,7 +79,7 @@ const Api = () => {
                     {imgs.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <div className='flex gap-[10px] justify-center text-[15px] font-[500]'>
                                 <p className='text-[#9C9C9C] line-through'>{item.price}</p>
                                 <p className='text-[#998E78]'>{item.value}</p>
@@ -91,7 +91,7 @@ const Api = () => {
                     {imgs2.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
                         </div>
                     )
@@ -99,7 +99,7 @@ const Api = () => {
                     {imgs3.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
                         </div>
                     )
@@ -110,7 +110,7 @@ const Api = () => {
                     {imgs.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <div className='flex gap-[10px] justify-center text-[15px] font-[500]'>
                                 <p className='text-[#9C9C9C] line-through'>{item.price}</p>
                                 <p className='text-[#998E78]'>{item.value}</p>
@@ -122,7 +122,7 @@ const Api = () => {
                     {imgs2.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
                         </div>
                     )
@@ -130,7 +130,7 @@ const Api = () => {
                     {imgs3.map((item, index) => (
                         <div >
                             <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500]'>{item.title}</h4>
+                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
                             <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
                         </div>
                     )
