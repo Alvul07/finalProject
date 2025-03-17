@@ -2,9 +2,8 @@ import React from 'react'
 import Header from '../components/Header';
 import ApiBtn from './ApiBtn';
 import Footer from './Footer';
-import SecondApi from './SecondApi';
 import ErrorBoundary from './ErrorBoundary';
-import ThirdApi from './Thirdapi';
+import ThirdApi from './ThirdApi';
 
 const ShopSectionSide2 = () => {
   return (
