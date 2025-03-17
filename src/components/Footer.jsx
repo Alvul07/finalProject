@@ -6,7 +6,7 @@ import Home from '../pages/Home'
 import Inst from '../assets/inst.svg'
 import Facebook from '../assets/facebook.svg'
 import Twitter from '../assets/twitter.svg'
-import Visa from '../assets/visa.svg'
+import BankCards from '../assets/bankCards.png'
 
 const Footer = () => {
     return (
@@ -43,22 +43,22 @@ const Footer = () => {
                     <div>
                         <nav>
                             <ul className='flex flex-col gap-[10px]'>
-                                <li><Link>Пальто</Link></li>
-                                <li><Link>Свитшоты</Link></li>
-                                <li><Link>Кардиганы</Link></li>
-                                <li><Link>Толстовки</Link></li>
+                                <li><Link to='/coat'>Пальто</Link></li>
+                                <li><Link to='/trousers'>Брюки</Link></li>
+                                <li><Link to='/jacket'>Куртки</Link></li>
+                                <li><Link to='/sweatShirts'>Толстовки</Link></li>
                             </ul>
                         </nav>
                     </div>
 
                     <div className='ml-auto'>
                         <div className='flex gap-[12px]'>
-                            <img className='size-[22px]' src={Inst} alt="" />
-                            <img src={Facebook} alt="" />
-                            <img src={Twitter} alt="" />
+                            <a href="#"><img className='size-[24px]' src={Inst} alt="" /></a>
+                            <a href="#"><img className='size-[23px]' src={Facebook} alt="" /></a>
+                            <a href="#"><img className='size-[24px]' src={Twitter} alt="" /></a>
                         </div>
                         <div className='mt-[30px]'>
-                            <img src={Visa} alt="" />
+                            <a href="#"><img className='w-[68px] h-[22px] ml-auto' src={BankCards} alt="" /></a>
                         </div>
                     </div>
 

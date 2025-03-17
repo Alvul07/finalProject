@@ -2,13 +2,13 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ErrorBoundary from './ErrorBoundary';
 
-const Api = () => {
+const FourthApi = () => {
     const [items, setItems] = useState([]);
     const [dataLength, setDataLength] = useState(0);
 
 
     useEffect(() => {
-        axios.get('https://f0c39e7608e741b4.mokky.dev/things?page=2&limit=9')
+        axios.get('https://f0c39e7608e741b4.mokky.dev/things?page=4&limit=9')
             .then((response) => {
                 console.log(response.data);
                 setItems(response.data.items);
@@ -40,4 +40,4 @@ const Api = () => {
     )
 }
 
-export default Api;
+export default FourthApi;

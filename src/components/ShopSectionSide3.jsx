@@ -4,8 +4,9 @@ import ApiBtn from './ApiBtn';
 import Footer from './Footer';
 import SecondApi from './SecondApi';
 import ErrorBoundary from './ErrorBoundary';
+import FourthApi from './FourthApi';
 
-const ShopSectionSide = () => {
+const ShopSectionSide3 = () => {
   return (
     <div>
       <div className='w-[1110px] mx-auto'>
@@ -15,7 +16,7 @@ const ShopSectionSide = () => {
           <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Магазин</span></p>
         </div>
         <ErrorBoundary>
-          <SecondApi />
+          <FourthApi/>
         </ErrorBoundary>
         <ApiBtn />
       </div>
@@ -24,4 +25,4 @@ const ShopSectionSide = () => {
   )
 }
 
-export default ShopSectionSide;
+export default ShopSectionSide3;

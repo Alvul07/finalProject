@@ -1,19 +1,19 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import NavShop from './NavShop';
-import Header from './Header';
-import ErrorBoundary from './ErrorBoundary';
+import Header from '../components/Header';
 import Footer from './Footer';
+import ErrorBoundary from './ErrorBoundary';
+import axios from 'axios';
+import NavBtn from './NavBtn';
 
-const Jacket = () => {
-    const [jackets, setJackets] = useState([])
-    const [dataLength, setDataLength] = useState(0);
+const SweatShirts2 = () => {
+    const [sweatShirts, setSweatShirts] = useState([])
+    const [dataLength, setDataLength] = useState(0)
 
 
     useEffect(() => {
-        axios.get("https://f0c39e7608e741b4.mokky.dev/things?type=Jacket&page=1&limit=9")
+        axios.get("https://f0c39e7608e741b4.mokky.dev/things?type=SweatShirt&page=2&limit=9")
             .then((response) => {
-                setJackets(response.data.items);
+                setSweatShirts(response.data.items);
                 setDataLength(response.data.meta.total_items)
             })
             .catch((error) => {
@@ -27,15 +27,14 @@ const Jacket = () => {
                 <Header />
                 <div className='mt-[190px]'>
                     <h1 className='font-[500] text-[55px]'>Магазин</h1>
-                    <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Куртки</span></p>
+                    <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Магазин</span></p>
                 </div>
-                <NavShop />
-                <p className="text-[17px] font-[500] text-[#808080] mb-[65px]">
-                    Показано: {jackets.length} из {dataLength} товаров
-                </p>
                 <ErrorBoundary>
+                    <p className="text-[17px] font-[500] text-[#808080] mt-[200px] mb-[65px]">
+                        Показано: {sweatShirts.length} из {dataLength} товаров
+                    </p>
                     <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
-                        {jackets.map((item) => (
+                        {sweatShirts.map((item) => (
                             <div>
                                 <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
                                 <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
@@ -45,12 +44,16 @@ const Jacket = () => {
                     </div>
                 </ErrorBoundary>
                 <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">
-                    Показано: {jackets.length} из {dataLength} товаров
+                    Показано: {sweatShirts.length} из {dataLength} товаров
                 </p>
+            </div>
+            <div className="flex justify-center gap-[14px] mb-2 text-[17px] font-[500]">
+                <NavBtn to='/sweatShirts'>1</NavBtn>
+                <NavBtn to='/sweatShirts2'>2</NavBtn>
             </div>
             <Footer />
         </div>
     )
 }
 
-export default Jacket;
+export default SweatShirts2;

@@ -1,37 +1,18 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import ErrorBoundary from './ErrorBoundary';
 
 const Api = () => {
-    const [imgs, setImgs] = useState([]);
-    const [imgs2, setImgs2] = useState([]);
-    const [imgs3, setImgs3] = useState([]);
-    const [loading, setLoading] = useState(false);
+    const [items, setItems] = useState([]);
+    const [dataLength, setDataLength] = useState(0);
+
 
     useEffect(() => {
-        setLoading(true);
-        axios.get(`https://f0c39e7608e741b4.mokky.dev/items?title=*Usa`)
+        axios.get('https://f0c39e7608e741b4.mokky.dev/things?page=1&limit=9')
             .then((response) => {
-                setImgs(response.data)
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-        setLoading(false);
-    }, []);
-    useEffect(() => {
-        axios.get(`https://f0c39e7608e741b4.mokky.dev/items?title=*Glow`)
-            .then((response) => {
-                setImgs2(response.data)
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
-    useEffect(() => {
-        axios.get(`https://f0c39e7608e741b4.mokky.dev/items?title=*Shot`)
-            .then((response) => {
-                setImgs3(response.data)
+                console.log(response.data);
+                setItems(response.data.items);
+                setDataLength(response.data.meta.total_items)
             })
             .catch((error) => {
                 console.log(error);
@@ -39,109 +20,23 @@ const Api = () => {
     }, []);
 
     return (
-        <div>
+        <ErrorBoundary>
             <p className="text-[17px] font-[500] text-[#808080] mb-[65px]">
-                Показано: 9 из 12 товаров
+                Показано: {items.length} из {dataLength} товаров
             </p>
-            <div className='flex flex-col gap-[65px]'>
-                <div className='flex justify-between'>
-                    {imgs.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <div className='flex gap-[10px] justify-center text-[15px] font-[500]'>
-                                <p className='text-[#9C9C9C] line-through'>{item.price}</p>
-                                <p className='text-[#998E78]'>{item.value}</p>
-                            </div>
-
-                        </div>
-                    )
-                    )}
-                    {imgs2.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
-                        </div>
-                    )
-                    )}
-                    {imgs3.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
-                        </div>
-                    )
-                    )}
-
-                </div>
-                <div className='flex justify-between'>
-                    {imgs.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <div className='flex gap-[10px] justify-center text-[15px] font-[500]'>
-                                <p className='text-[#9C9C9C] line-through'>{item.price}</p>
-                                <p className='text-[#998E78]'>{item.value}</p>
-                            </div>
-
-                        </div>
-                    )
-                    )}
-                    {imgs2.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
-                        </div>
-                    )
-                    )}
-                    {imgs3.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
-                        </div>
-                    )
-                    )}
-
-                </div>
-                <div className='flex justify-between'>
-                    {imgs.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <div className='flex gap-[10px] justify-center text-[15px] font-[500]'>
-                                <p className='text-[#9C9C9C] line-through'>{item.price}</p>
-                                <p className='text-[#998E78]'>{item.value}</p>
-                            </div>
-
-                        </div>
-                    )
-                    )}
-                    {imgs2.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
-                        </div>
-                    )
-                    )}
-                    {imgs3.map((item, index) => (
-                        <div >
-                            <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                            <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                            <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.value}</p>
-                        </div>
-                    )
-                    )}
-
-                </div>
+            <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
+                {items.map((item) => (
+                    <div>
+                        <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
+                        <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
+                        <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.price}</p>
+                    </div>
+                ))}
             </div>
             <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">
-                Показано: 9 из 12 товаров
+                Показано: {items.length} из {dataLength} товаров
             </p>
-        </div>
+        </ErrorBoundary>
     )
 }
 

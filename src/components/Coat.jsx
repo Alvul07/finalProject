@@ -7,12 +7,14 @@ import ErrorBoundary from './ErrorBoundary'
 
 const Coat = () => {
     const [coats, setCoats] = useState([])
+    const [dataLength, setDataLength] = useState(0);
+
 
     useEffect(() => {
-        axios.get("https://f0c39e7608e741b4.mokky.dev/coats")
+        axios.get("https://f0c39e7608e741b4.mokky.dev/things?type=Coat&page=1&limit=9")
             .then((response) => {
-                console.log(response.data);
-                setCoats(response.data)
+                setCoats(response.data.items);
+                setDataLength(response.data.meta.total_items)
             })
             .catch((error) => {
                 console.log(error);
@@ -29,7 +31,7 @@ const Coat = () => {
                 </div>
                 <NavShop />
                 <p className="text-[17px] font-[500] text-[#808080] mb-[65px]">
-                    Показано: {coats.length} из {coats.length} товаров
+                    Показано: {coats.length} из {dataLength} товаров
                 </p>
                 <ErrorBoundary>
                     <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
@@ -42,6 +44,9 @@ const Coat = () => {
                         ))}
                     </div>
                 </ErrorBoundary>
+                <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">
+                    Показано: {coats.length} из {dataLength} товаров
+                </p>
             </div>
             <Footer />
         </div>

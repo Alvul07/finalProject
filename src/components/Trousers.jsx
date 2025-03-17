@@ -8,12 +8,15 @@ import Footer from './Footer';
 
 const Trousers = () => {
     const [trousers, setTrousers] = useState([])
+    const [dataLength, setDataLength] = useState(0);
+
 
     useEffect(() => {
-        axios.get("https://f0c39e7608e741b4.mokky.dev/trousers")
+        axios.get("https://f0c39e7608e741b4.mokky.dev/things?type=Trousers&page=1&limit=9")
             .then((response) => {
                 console.log(response.data);
-                setTrousers(response.data)
+                setTrousers(response.data.items);
+                setDataLength(response.data.meta.total_items)
             })
             .catch((error) => {
                 console.log(error);
@@ -29,10 +32,11 @@ const Trousers = () => {
                     <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Брюки</span></p>
                 </div>
                 <NavShop />
-                <p className="text-[17px] font-[500] text-[#808080] mb-[65px]">
-                    Показано: {trousers.length} из {trousers.length} товаров
-                </p>
+
                 <ErrorBoundary>
+                    <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">
+                        Показано: {trousers.length} из {dataLength} товаров
+                    </p>
                     <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
                         {trousers.map((item) => (
                             <div>
@@ -43,6 +47,9 @@ const Trousers = () => {
                         ))}
                     </div>
                 </ErrorBoundary>
+                <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">
+                    Показано: {trousers.length} из {dataLength} товаров
+                </p>
             </div>
             <Footer />
         </div>
