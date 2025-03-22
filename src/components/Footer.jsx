@@ -1,8 +1,6 @@
 import React from 'react'
-import Logo from '../assets/logo.svg'
-import Ring from '../assets/ring.svg'
+import Logo from '../assets/logo.png'
 import { Link, NavLink } from 'react-router-dom'
-import Home from '../pages/Home'
 import Inst from '../assets/inst.svg'
 import Facebook from '../assets/facebook.svg'
 import Twitter from '../assets/twitter.svg'
@@ -14,7 +12,10 @@ const Footer = () => {
             <div className='w-[1110px] mx-auto pt-[101px] pb-[97px]'>
 
                 <div className='flex justify-between items-center'>
-                    <img src={Logo} alt="" />
+                    <div className='flex gap-[10px] items-center'>
+                        <img src={Logo} alt="" className='size-[24px]' />
+                        <p className='font-[500] text-[16px]'>ReWear</p>
+                    </div>
                     <nav>
                         <ul className='flex gap-[45px] text-[15px]'>
                             <li><NavLink className={({ isActive }) => isActive ? 'text-[#6E9C9F] font-[700]' : ''} to='/'>Главная</NavLink></li>
@@ -26,9 +27,9 @@ const Footer = () => {
 
                     <div className=''>
                         <div className='flex items-center gap-[13px] text-[15px]'>
-                            <a href="+7 (495) 823-54-12" className='ml-auto'>+7 (495) 823-54-12</a>
+                            <a href="+7 (495) 823-54-12" className='ml-auto'>+996 555-444-333</a>
                         </div>
-                        <div><a href="" className='text-[15px]'>hello@womazing.com</a></div>
+                        <div><a href="" className='text-[15px]'>ReWear@gmail.com</a></div>
                     </div>
                 </div>
 

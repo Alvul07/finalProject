@@ -42,15 +42,15 @@ const SectionConts = () => {
             <div className='flex gap-[100px] mt-[130px] mb-[130px]'>
                 <div>
                     <p>Телефон</p>
-                    <a href="+7 (495) 823-54-12">+7 (495) 823-54-12</a>
+                    <a href="+7 (495) 823-54-12">+996 555-444-333</a>
                 </div>
                 <div>
                     <p>E-mail</p>
-                    <a href="">info@sitename.com</a>
+                    <a href="">ReWear@gmail.com</a>
                 </div>
                 <div>
                     <p>Адрес</p>
-                    <a href="">г. Москва, 3-я улица Строителей, 25</a>
+                    <a href="">г. Бишкек, улица Юнусалиева, 25</a>
                 </div>
             </div>
 

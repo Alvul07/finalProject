@@ -1,15 +1,18 @@
 import React from 'react'
-import Logo from '../assets/logo.svg'
+import Logo from '../assets/logo.png'
 import Ring from '../assets/ring.svg'
 import ShopBag from '../assets/shopBag.svg'
 import { NavLink } from 'react-router-dom'
-import Home from '../pages/Home'
-import Shop from '../pages/Shop'
+
 
 const Header = () => {
   return (
     <header className='max-w-[1370px] mx-auto pt-[51px] flex justify-between items-center relative'>
-      <img src={Logo} alt="" />
+      <div className='flex gap-[10px] items-center'>
+        <img src={Logo} alt="" className='size-[24px]'/>
+        <p className='font-[500] text-[16px]'>ReWear</p>
+      </div>
+      
       <nav>
         <ul className='flex gap-[45px] text-[15px]'>
           <li><NavLink className={({ isActive }) => isActive ? 'text-[#6E9C9F] font-[700]' : ''} to='/'>Главная</NavLink></li>
@@ -20,10 +23,10 @@ const Header = () => {
       </nav>
 
       <div className='flex gap-[67px]'>
-        <div className='flex items-center gap-[13px] text-[15px]'>
-          <button><img src={Ring} alt="" /></button>
-          <a href="+7 (495) 823-54-12">+7 (495) 823-54-12</a>
-        </div>
+        <button className='flex items-center gap-[13px] text-[15px] cursor-pointer'>
+          <a href="+7 (495) 823-54-12"><img src={Ring} alt="" /></a>
+          <a href="+7 (495) 823-54-12">+996 555-444-333</a>
+        </button>
 
         <button><img src={ShopBag} alt="" /></button>
       </div>

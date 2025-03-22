@@ -10,7 +10,7 @@ const Contacts = () => {
                 <Header />
                 <div className='mt-[190px]'>
                     <h1 className='text-[55px] font-[500]'>Контакты</h1>
-                    <p className='text-[17px] font-[500] mt-[20px]'>Главная — <span className='text-[#909090]'>Контакты</span></p>
+                    <p className='text-[17px] font-[500] mt-[20px] flex gap-[13px]'>Главная <span>—</span> <span className='text-[#909090]'>Контакты</span></p>
                 </div>
                 <SectionConts/>
             </div>

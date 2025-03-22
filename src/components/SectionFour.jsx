@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Squad1 from '../assets/squad1.png'
-import Squad2 from '../assets/squad2.jpeg'
-import Squad3 from '../assets/squad3.jpeg'
+import Squad1 from '../assets/squad1.jpg'
+import Squad2 from '../assets/squad2.jpg'
+import Squad3 from '../assets/squad3.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ArrowL1 from '../assets/arrowL1.svg'
 import ArrowR1 from '../assets/arrowR1.svg'
@@ -10,6 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { Navigation, Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 
 const SectionFour = () => {
     const [swiper, setSwiper] = useState(null);
@@ -63,40 +64,36 @@ const SectionFour = () => {
 
             <div className='flex justify-between items-center'>
                 <div>
-                    <Swiper pagination={{
-                        bulletClass: 'custom-bullet',
-                        bulletActiveClass:
-                            'custom-bullet-active',
-                    }} navigation={{
-                        nextEl: '.custom-next',
-                        prevEl: '.custom-prev',
-                    }} modules={[Navigation, Pagination]} slidesPerView={1} loop={false}
+                    <Swiper
+                        navigation={{
+                            nextEl: '.custom-next',
+                            prevEl: '.custom-prev',
+                        }} modules={[Navigation, Pagination]} slidesPerView={1} loop={false}
                         initialSlide={0}
                         spaceBetween={10} className="mineSwiper w-[800px]"
                         onSwiper={setSwiper}
                         onSlideChange={handleSlideChange}
                     >
-                        <SwiperSlide><img className='w-[729px] h-[488px] object-cover ml-[70px]' src={Squad2} alt="" /></SwiperSlide>
-                        <SwiperSlide><img className='ml-[70px]' src={Squad1} alt="" /></SwiperSlide>
                         <SwiperSlide><img className='w-[729px] h-[488px] object-cover ml-[70px]' src={Squad3} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className='w-[729px] h-[488px] ml-[70px]' src={Squad1} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className='w-[729px] h-[488px] object-cover ml-[70px] object-top' src={Squad2} alt="" /></SwiperSlide>
                     </Swiper>
                 </div>
 
-                <div className='w-[285px] h-[331px]'>
-                    <h3 className='font-[500] text-[25px]'>Для каждой</h3>
+                <div className='w-[285px]'>
+                    <h3 className='font-[500] text-[25px]'>Наша одежда</h3>
                     <p className='font-[500] text-[17px] mb-[28px] mt-[28px]'>
-                        Каждая девушка уникальна.
-                        Однако, мы схожи в
-                        миллионе мелочей.
+                        Это стиль и забота о природе.
+                        Мы перерабатываем ткани,
+                        создавая экологичную моду.
                     </p>
                     <p className='font-[500] text-[17px] mb-[28px]'>
-                        Womazing ищет эти мелочи и
-                        создает прекрасные вещи,
-                        которые выгодно
-                        подчеркивают достоинства
-                        каждой девушки.
+                        Покупая такую одежду, вы снижаете отходы,
+                        поддерживаете устойчивое производство и
+                        помогаете сделать моду осознанной.
+                        Давайте вместе заботиться о планете!
                     </p>
-                    <a href="" className='text-[#6E9C9F] hover:underline hover:underline-offset-[8px] decoration-[#CEDEDF]'>Подробнее о бренде</a>
+                    <Link to='/about' className='text-[#6E9C9F] hover:underline hover:underline-offset-[8px] decoration-[#CEDEDF]'>Подробнее о бренде</Link>
                 </div>
             </div>
         </section>

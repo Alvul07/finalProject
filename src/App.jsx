@@ -13,11 +13,14 @@ import SweatShirts from "./components/SweatShirts"
 import ShopSectionSide2 from "./components/ShopSectionSide2"
 import ShopSectionSide3 from "./components/ShopSectionSide3"
 import SweatShirts2 from "./components/SweatShirts2"
+import BagAdd from "./components/BagAdd"
+import { ApiProvider } from "./components/ApiProvider"
 
 function App() {
 
   return (
     <>
+    <ApiProvider></ApiProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -34,6 +37,7 @@ function App() {
           <Route path="/thirdApi" element={<ShopSectionSide2/>} />
           <Route path="/fourthApi" element={<ShopSectionSide3/>} />
           <Route path="/sweatShirts2" element={<SweatShirts2/>} />
+          <Route path="/bagAdd/:title" element={<BagAdd/>} />
         </Routes>
       </Router>
     </>

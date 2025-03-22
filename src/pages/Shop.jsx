@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../components/Header';
 import ShopSectionOne from '../components/ShopSectionOne';
-import { NavLink } from 'react-router-dom';
 import ApiBtn from '../components/ApiBtn';
 import Footer from '../components/Footer';
 
@@ -12,7 +11,7 @@ const Shop = () => {
         <Header />
         <div className='mt-[190px]'>
           <h1 className='font-[500] text-[55px]'>Магазин</h1>
-          <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Магазин</span></p>
+          <p className='font-[500] text-[17px] mt-[10px] flex gap-[13px]'>Главная <span>—</span> <span className='text-[#909090]'>Магазин</span></p>
         </div>
         <ShopSectionOne />
         <ApiBtn />

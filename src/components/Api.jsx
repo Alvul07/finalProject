@@ -1,23 +1,10 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import ErrorBoundary from './ErrorBoundary';
+import ApiProps from './ApiProps';
+import { ApiContext } from './ApiProvider';
 
 const Api = () => {
-    const [items, setItems] = useState([]);
-    const [dataLength, setDataLength] = useState(0);
-
-
-    useEffect(() => {
-        axios.get('https://f0c39e7608e741b4.mokky.dev/things?page=1&limit=9')
-            .then((response) => {
-                console.log(response.data);
-                setItems(response.data.items);
-                setDataLength(response.data.meta.total_items)
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
+    const {items, dataLength} = useContext(ApiContext);
 
     return (
         <ErrorBoundary>
@@ -25,12 +12,8 @@ const Api = () => {
                 Показано: {items.length} из {dataLength} товаров
             </p>
             <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
-                {items.map((item) => (
-                    <div>
-                        <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                        <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                        <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.price}</p>
-                    </div>
+                {items.map((item, index) => (
+                    <ApiProps key={index} img={item.img} title={item.title} price={item.price}/>
                 ))}
             </div>
             <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">

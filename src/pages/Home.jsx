@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios';
+import React from 'react'
 import Header from '../components/Header';
 import SectionOne from '../components/SectionOne';
-import Swiper from '../components/SwiperText'
 import SectionTwo from '../components/SectionTwo';
 import SectionThree from '../components/SectionThree';
 import SectionFour from '../components/SectionFour';

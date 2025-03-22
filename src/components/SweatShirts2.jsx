@@ -4,6 +4,7 @@ import Footer from './Footer';
 import ErrorBoundary from './ErrorBoundary';
 import axios from 'axios';
 import NavBtn from './NavBtn';
+import ApiProps from './ApiProps';
 
 const SweatShirts2 = () => {
     const [sweatShirts, setSweatShirts] = useState([])
@@ -27,19 +28,15 @@ const SweatShirts2 = () => {
                 <Header />
                 <div className='mt-[190px]'>
                     <h1 className='font-[500] text-[55px]'>Магазин</h1>
-                    <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Магазин</span></p>
+                    <p className='font-[500] text-[17px] mt-[10px] flex gap-[13px]'>Главная <span>—</span> <span className='text-[#909090]'>Магазин</span></p>
                 </div>
                 <ErrorBoundary>
                     <p className="text-[17px] font-[500] text-[#808080] mt-[200px] mb-[65px]">
                         Показано: {sweatShirts.length} из {dataLength} товаров
                     </p>
                     <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
-                        {sweatShirts.map((item) => (
-                            <div>
-                                <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                                <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                                <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.price}</p>
-                            </div>
+                        {sweatShirts.map((item, index) => (
+                            <ApiProps key={index} img={item.img} title={item.title} price={item.price}/>
                         ))}
                     </div>
                 </ErrorBoundary>

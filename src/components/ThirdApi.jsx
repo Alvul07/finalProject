@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import ErrorBoundary from './ErrorBoundary';
+import ApiProps from './ApiProps';
 
 const ThirdApi = () => {
     const [items, setItems] = useState([]);
@@ -25,12 +26,8 @@ const ThirdApi = () => {
                 Показано: {items.length} из {dataLength} товаров
             </p>
             <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
-                {items.map((item) => (
-                    <div>
-                        <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                        <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                        <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.price}</p>
-                    </div>
+                {items.map((item, index) => (
+                    <ApiProps key={index} img={item.img} title={item.title} price={item.price}/>
                 ))}
             </div>
             <p className="text-[17px] font-[500] text-[#808080] mt-[65px] mb-[65px]">

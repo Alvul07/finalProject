@@ -28,7 +28,7 @@ const SectionOne = () => {
               <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
                 <img src={Arrow} alt="" />
               </button>
-              <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+              <Link to='/shop'><GreenBtn className='w-[243px]'>Открыть магазин</GreenBtn></Link>
             </div>
           </div>
         </SwiperSlide>
@@ -42,7 +42,7 @@ const SectionOne = () => {
               <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
                 <img src={Arrow} alt="" />
               </button>
-              <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+              <Link to='/shop'><GreenBtn className='w-[243px]'>Открыть магазин</GreenBtn></Link>
             </div>
           </div>
         </SwiperSlide>
@@ -56,7 +56,7 @@ const SectionOne = () => {
               <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
                 <img src={Arrow} alt="" />
               </button>
-              <Link to='/shop'><GreenBtn className='w-[243px]'><Link to='/shop'>Открыть магазин</Link></GreenBtn></Link>
+              <Link to='/shop'><GreenBtn className='w-[243px]'>Открыть магазин</GreenBtn></Link>
             </div>
           </div>
         </SwiperSlide>

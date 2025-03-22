@@ -4,6 +4,7 @@ import NavShop from './NavShop';
 import Header from './Header';
 import ErrorBoundary from './ErrorBoundary';
 import Footer from './Footer';
+import ApiProps from './ApiProps';
 
 
 const Trousers = () => {
@@ -29,7 +30,7 @@ const Trousers = () => {
                 <Header />
                 <div className='mt-[190px]'>
                     <h1 className='font-[500] text-[55px]'>Магазин</h1>
-                    <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Брюки</span></p>
+                    <p className='font-[500] text-[17px] mt-[10px] flex gap-[13px]'>Главная <span>—</span> <span className='text-[#909090]'>Брюки</span></p>
                 </div>
                 <NavShop />
 
@@ -38,12 +39,8 @@ const Trousers = () => {
                         Показано: {trousers.length} из {dataLength} товаров
                     </p>
                     <div className='flex gap-x-[30px] flex-wrap gap-y-[65px]'>
-                        {trousers.map((item) => (
-                            <div>
-                                <img src={item.img} alt="" className='w-[350px] h-[478px] object-cover' />
-                                <h4 className='text-center text-[20px] font-[500] mt-[20px]'>{item.title}</h4>
-                                <p className='text-[#998E78] text-center text-[15px] font-[500]'>{item.price}</p>
-                            </div>
+                        {trousers.map((item, index) => (
+                            <ApiProps key={index} img={item.img} title={item.title} price={item.price}/>
                         ))}
                     </div>
                 </ErrorBoundary>
