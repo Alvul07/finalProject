@@ -14,6 +14,7 @@ const SectionOneBA = () => {
     const [count, setCount] = useState(1);
     const min = 1;
     const max = 20;
+    const [coats, setCoats] = useState([])
 
     const colors = [
         { name: 'clr1', color: 'bg-[#927876]' },
@@ -43,6 +44,17 @@ const SectionOneBA = () => {
                 console.log(error));
     }, [decodedTitle]);
 
+    useEffect(() => {
+        axios.get("https://f0c39e7608e741b4.mokky.dev/things?type=Coat")
+        .then((response) => {
+            console.log(response.data)
+            setCoats(response.data)
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    }, []);
+
     if (!product) return <p>Загрузка...</p>;
 
     return (
@@ -50,7 +62,7 @@ const SectionOneBA = () => {
             <section className='mt-[100px]'>
                 <h1 className='text-[55px] font-[500]'>{product.title}</h1>
                 <p className='text-[17px] font-[500] mt-[20px] flex gap-[13px]'>
-                    Главная <span>—</span> Пальто <span>—</span> <span className='text-[#909090]'>{product.title}</span>
+                    Главная <span>—</span> <span>Магазин</span> <span>—</span> <span className='text-[#909090]'>{product.title}</span>
                 </p>
                 <div className='flex mt-[100px] gap-[48px] items-center'>
                     <img src={product.img} alt="" className='w-[536px] h-[729px] object-cover' />
