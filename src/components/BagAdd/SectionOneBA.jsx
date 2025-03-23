@@ -14,7 +14,6 @@ const SectionOneBA = () => {
     const [count, setCount] = useState(1);
     const min = 1;
     const max = 20;
-    const [coats, setCoats] = useState([])
 
     const colors = [
         { name: 'clr1', color: 'bg-[#927876]' },
@@ -43,17 +42,6 @@ const SectionOneBA = () => {
             .catch(error =>
                 console.log(error));
     }, [decodedTitle]);
-
-    useEffect(() => {
-        axios.get("https://f0c39e7608e741b4.mokky.dev/things?type=Coat")
-        .then((response) => {
-            console.log(response.data)
-            setCoats(response.data)
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-    }, []);
 
     if (!product) return <p>Загрузка...</p>;
 
