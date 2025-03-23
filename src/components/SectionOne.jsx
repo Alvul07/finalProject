@@ -1,7 +1,7 @@
 import React from 'react'
 import bigImg from '../assets/BigImg.jpeg'
-import img2 from '../assets/Img2.png'
-import img3 from '../assets/Img3.jpg'
+import img2 from '../assets/Img2.jpg'
+import img3 from '../assets/Img3.jpg.webp'
 import GreenBtn from './GreenBtn'
 import Arrow from '../assets/arrow.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -64,8 +64,8 @@ const SectionOne = () => {
 
       <div className='mt-[41px] relative'>
         <img className='w-[420px] h-[646px] object-cover flex justify-end ' src={bigImg} alt="" />
-        <img className='absolute top-[123px] left-[315px]' src={img2} alt="" />
-        <img className='absolute bottom-0 right-[340px]' src={img3} alt="" />
+        <img className='size-[197px] absolute top-[123px] left-[315px] object-cover object-top' src={img2} alt="" />
+        <img className='w-[190px] h-[318px] absolute bottom-0 right-[340px] object-cover' src={img3} alt="" />
       </div>
 
     </section>
