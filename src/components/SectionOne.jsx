@@ -65,7 +65,7 @@ const SectionOne = () => {
       <div className='mt-[41px] relative'>
         <img className='w-[420px] h-[646px] object-cover flex justify-end ' src={bigImg} alt="" />
         <img className='absolute top-[123px] left-[315px]' src={img2} alt="" />
-        <img className='absolute bottom-[61px] right-[340px]' src={img3} alt="" />
+        <img className='absolute bottom-0 right-[340px]' src={img3} alt="" />
       </div>
 
     </section>
