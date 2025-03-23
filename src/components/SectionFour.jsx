@@ -46,7 +46,7 @@ const SectionFour = () => {
     return (
         <section className='max-w-[1250px] mx-auto mt-[130px] relative'>
             <div className='w-[1110px] mx-auto'>
-                <h2 className='font-[500] text-[40px] mb-[92px]'>Команда мечты Womazing</h2>
+                <h2 className='font-[500] text-[40px] mb-[92px]'>Команда мечты ReWear</h2>
             </div>
             <button
                 onClick={() => swiper?.handlePrev()}

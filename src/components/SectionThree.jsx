@@ -22,7 +22,7 @@ const SectionThree = () => {
                 <h3 className='font-[500] text-[25px] mt-[33px] mb-[24px]'>Скорость</h3>
                 <p className='h-[115px] font-[500] text-[17px]'>
                     Благодаря отлаженной системе в <br />
-                    Womazing мы можем отшивать до <br />
+                    ReWear мы можем отшивать до <br />
                     20-ти единиц продукции в наших <br />
                     собственных цехах</p>
             </div>
@@ -33,7 +33,7 @@ const SectionThree = () => {
                     Мы заботимся о людях и планете. <br />
                     Безотходное производство и <br />
                     комфортные условия труда - все <br />
-                    это Womazing</p>
+                    это ReWear</p>
             </div>
         </div>
     </section>

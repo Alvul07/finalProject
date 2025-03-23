@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import WhiteBtn from './WhiteBtn'
-import ArrowR from '../assets/arrowR.svg'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import ApiProps from './ApiProps'
