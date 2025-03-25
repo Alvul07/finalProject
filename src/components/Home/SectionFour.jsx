@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Squad1 from '../assets/squad1.jpg'
-import Squad2 from '../assets/squad2.jpg'
-import Squad3 from '../assets/squad3.jpg'
+import Squad1 from '../../assets/squad1.jpg'
+import Squad2 from '../../assets/squad2.jpg'
+import Squad3 from '../../assets/squad3.jpg'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import ArrowL1 from '../assets/arrowL1.svg'
-import ArrowR1 from '../assets/arrowR1.svg'
+import ArrowL1 from '../../assets/arrowL1.svg'
+import ArrowR1 from '../../assets/arrowR1.svg'
 
 import 'swiper/css';
 import 'swiper/css/navigation';

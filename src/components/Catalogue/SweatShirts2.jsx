@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../components/Header';
-import Footer from './Footer';
-import ErrorBoundary from './ErrorBoundary';
+import Header from '../Header';
+import Footer from '../Footer';
+import ErrorBoundary from '../ErrorBoundary';
 import axios from 'axios';
-import NavBtn from './NavBtn';
-import ApiProps from './ApiProps';
+import NavBtn from '../Btns/NavBtn';
+import ApiProps from '../Api/ApiProps';
 
 const SweatShirts2 = () => {
     const [sweatShirts, setSweatShirts] = useState([])

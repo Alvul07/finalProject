@@ -1,9 +1,9 @@
 import React from 'react'
-import bigImg from '../assets/BigImg.jpeg'
-import img2 from '../assets/Img2.jpg'
-import img3 from '../assets/Img3.jpg.webp'
-import GreenBtn from './GreenBtn'
-import Arrow from '../assets/arrow.svg'
+import bigImg from '../../assets/BigImg.jpeg'
+import img2 from '../../assets/Img2.jpg'
+import img3 from '../../assets/Img3.jpg.webp'
+import GreenBtn from '../Btns/GreenBtn'
+import Arrow from '../../assets/arrow.svg'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -36,7 +36,7 @@ const SectionOne = () => {
           <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Что-то новенькое. Мы заждались тебя.</h1>
           <div className='flex flex-col items-end w-[400px]'>
             <div className='flex w-[365px]'>
-              <p className='text-[20px] text-end'>Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с Womazing!</p>
+              <p className='text-[20px] text-end'>Надоело искать себя в сером городе? Настало время новых идей, свежих красок и вдохновения с ReWear!</p>
             </div>
             <div className='flex ml-[130px] mt-[52px] '>
               <button className='size-[67px] bg-[#6E9C9F1A] flex items-center justify-center'>
@@ -47,7 +47,7 @@ const SectionOne = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className='mb-[170px]'>
-          <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Включай новый сезон с WOMAZING</h1>
+          <h1 className='font-[500] text-[55px] w-[650px] leading-[60.5px] mt-[186px] mb-[45px]'>Включай новый сезон с ReWear</h1>
           <div className='flex flex-col items-end w-[400px]'>
             <div className='flex w-[365px]'>
               <p className='text-[20px] text-end'>Мы обновили ассортимент - легендарные коллекции и новинки от отечественных дизайнеров</p>
@@ -65,7 +65,7 @@ const SectionOne = () => {
       <div className='mt-[41px] relative'>
         <img className='w-[420px] h-[646px] object-cover flex justify-end ' src={bigImg} alt="" />
         <img className='size-[197px] absolute top-[123px] left-[315px] object-cover object-top' src={img2} alt="" />
-        <img className='w-[190px] h-[318px] absolute top-[388px] right-[340px] object-cover' src={img3} alt="" />
+        <img className='w-[190px] h-[318px] absolute top-[385.5px] right-[340px] object-cover' src={img3} alt="" />
       </div>
 
     </section>

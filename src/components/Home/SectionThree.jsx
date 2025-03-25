@@ -1,7 +1,7 @@
 import React from 'react'
-import Quality from '../assets/quality.svg'
-import Speed from '../assets/speed.svg'
-import Responsibility from '../assets/responsibility.svg'
+import Quality from '../../assets/quality.svg'
+import Speed from '../../assets/speed.svg'
+import Responsibility from '../../assets/responsibility.svg'
 
 const SectionThree = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from '../components/Header';
-import ApiBtn from './ApiBtn';
-import Footer from './Footer';
-import ErrorBoundary from './ErrorBoundary';
-import ThirdApi from './ThirdApi';
+import Header from '../Header';
+import ApiBtn from '../Btns/ApiBtn';
+import Footer from '../Footer';
+import ErrorBoundary from '../ErrorBoundary';
+import FourthApi from '../Api/FourthApi';
 
-const ShopSectionSide2 = () => {
+const ShopSectionSide3 = () => {
   return (
     <div>
       <div className='w-[1110px] mx-auto'>
@@ -15,7 +15,7 @@ const ShopSectionSide2 = () => {
           <p className='font-[500] text-[17px] mt-[10px]'>Главная — <span className='text-[#909090]'>Магазин</span></p>
         </div>
         <ErrorBoundary>
-          <ThirdApi/>
+          <FourthApi/>
         </ErrorBoundary>
         <ApiBtn />
       </div>
@@ -24,4 +24,4 @@ const ShopSectionSide2 = () => {
   )
 }
 
-export default ShopSectionSide2;
+export default ShopSectionSide3;

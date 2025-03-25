@@ -1,11 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import NavShop from './NavShop';
-import Header from './Header';
-import ErrorBoundary from './ErrorBoundary';
-import Footer from './Footer';
-import NavBtn from './NavBtn';
-import ApiProps from './ApiProps';
+import NavShop from '../Shop/NavShop';
+import Header from '../Header';
+import ErrorBoundary from '../ErrorBoundary';
+import Footer from '../Footer';
+import NavBtn from '../Btns/NavBtn';
+import ApiProps from '../Api/ApiProps';
 
 
 const SweatShirts = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Api from './Api';
-import ErrorBoundary from './ErrorBoundary';
+import Api from '../Api/Api';
+import ErrorBoundary from '../ErrorBoundary';
 import NavShop from './NavShop';
 
 const ShopSectionOne = () => {

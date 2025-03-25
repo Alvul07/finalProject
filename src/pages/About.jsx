@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../components/Header';
 import Res1 from '../assets/res1.jpeg'
 import Res2 from '../assets/res2.jpeg'
-import GreenBtn from '../components/GreenBtn';
+import GreenBtn from '../components/Btns/GreenBtn';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import ErrorBoundary from './ErrorBoundary';
+import ErrorBoundary from '../ErrorBoundary';
 import ApiProps from './ApiProps';
 import { ApiContext } from './ApiProvider';
 

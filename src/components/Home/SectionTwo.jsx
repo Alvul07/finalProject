@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import WhiteBtn from './WhiteBtn'
+import WhiteBtn from '../Btns/WhiteBtn'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import ApiProps from './ApiProps'
+import ApiProps from '../Api/ApiProps'
 
 
 const SectionTwo = () => {

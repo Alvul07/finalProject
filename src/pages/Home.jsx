@@ -1,9 +1,9 @@
 import React from 'react'
 import Header from '../components/Header';
-import SectionOne from '../components/SectionOne';
-import SectionTwo from '../components/SectionTwo';
-import SectionThree from '../components/SectionThree';
-import SectionFour from '../components/SectionFour';
+import SectionOne from '../components/Home/SectionOne';
+import SectionTwo from '../components/Home/SectionTwo';
+import SectionThree from '../components/Home/SectionThree';
+import SectionFour from '../components/Home/SectionFour';
 import Footer from '../components/Footer';
 
 const Home = () => {

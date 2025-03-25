@@ -1,10 +1,10 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import NavShop from './NavShop'
-import ErrorBoundary from './ErrorBoundary'
-import ApiProps from './ApiProps'
+import Header from '../Header'
+import Footer from '../Footer'
+import NavShop from '../Shop/NavShop'
+import ErrorBoundary from '../ErrorBoundary'
+import ApiProps from '../Api/ApiProps'
 
 const Coat = () => {
     const [coats, setCoats] = useState([])

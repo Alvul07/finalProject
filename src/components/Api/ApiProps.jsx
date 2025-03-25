@@ -1,5 +1,5 @@
 import React from 'react'
-import ArrowR from '../assets/arrowR.svg'
+import ArrowR from '../../assets/arrowR.svg'
 import { NavLink } from 'react-router-dom'
 
 const ApiProps = ({ img, title, price }) => {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import ErrorBoundary from './ErrorBoundary';
-import ApiProps from './ApiProps';
+import ErrorBoundary from '../ErrorBoundary';
+import ApiProps from '../Api/ApiProps';
 
 const FourthApi = () => {
     const [items, setItems] = useState([]);

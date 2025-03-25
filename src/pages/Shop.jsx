@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header';
-import ShopSectionOne from '../components/ShopSectionOne';
-import ApiBtn from '../components/ApiBtn';
+import ShopSectionOne from '../components/Shop/ShopSectionOne';
+import ApiBtn from '../components/Btns/ApiBtn';
 import Footer from '../components/Footer';
 
 const Shop = () => {

@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import GreenBtn from './GreenBtn';
 
 const SectionConts = () => {
     const [formData, setFormData] = useState({
