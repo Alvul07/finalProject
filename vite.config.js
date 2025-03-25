@@ -11,5 +11,8 @@ export default defineConfig({
   },
   server: {
     historyApiFallback: true,
+    mimeTypes: {
+      'text/css': ['css']
+    }
   },
 })
