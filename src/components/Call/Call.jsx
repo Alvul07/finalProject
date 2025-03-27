@@ -9,7 +9,6 @@ export default function Call() {
         name: "",
         email: "",
         phoneNumber: "",
-        message: "",
     });
 
     const [open, setOpen] = React.useState(false);
@@ -31,7 +30,6 @@ export default function Call() {
             name: "",
             email: "",
             phoneNumber: "",
-            message: "",
         });
 
         setOpen(false);
