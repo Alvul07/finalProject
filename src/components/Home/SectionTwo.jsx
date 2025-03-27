@@ -24,7 +24,7 @@ const SectionTwo = () => {
             <h1 className='font-[500] text-[40px] mb-[92px]'>Новая коллекция</h1>
             <div className='flex justify-between'>
                 {cards.slice(0, 3).map((item, index) => (
-                    <div className='flex gap-[30px]'>
+                    <div className='flex gap-[30px]' key={index}>
                         <ApiProps key={index} img={item.img} title={item.title} price={item.price}/>
                     </div>
                 ))}

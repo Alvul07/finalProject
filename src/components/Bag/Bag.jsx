@@ -16,7 +16,7 @@ const Bag = () => {
         </div>
         {cart.length > 0 ?
           <div className="flex text-[20px] font-[500] justify-evenly ml-[80px] mb-[25px] mt-[220px]">
-            <h4>Товар</h4>
+            <h4 className='mr-[30px]'>Товар</h4>
             <h4>Размер</h4>
             <h4>Цвет</h4>
             <h4>Кол-во</h4>

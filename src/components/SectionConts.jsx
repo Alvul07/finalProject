@@ -62,7 +62,7 @@ const SectionConts = () => {
                     <textarea className='border-b w-[440px] h-[130px] resize-none'
                         name='message' placeholder='Сообщение' value={formData.message} onChange={handleChange} required></textarea>
                     <button type="submit"
-                        className='h-[68px] bg-[#6E9C9F] text-white text-[17px] hover:bg-[#509498] duration-500 w-[189px]'>Отправить</button>
+                        className='h-[68px] bg-[#6E9C9F] text-white text-[17px] hover:bg-[#509498] duration-500 w-[189px] cursor-pointer'>Отправить</button>
 
                         {isSubmitted && (
                             <div className='w-[440px] h-[80px] bg-[#F1EADC] text-[17px] font-[500] flex items-center justify-center'>

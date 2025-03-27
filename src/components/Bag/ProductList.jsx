@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import GreenBtn from "../Btns/GreenBtn";
 import { CartContext } from "./ProductAdd";
+import { Link } from "react-router-dom";
 
 const ProductList = () => {
     const { cart, removeFromCart } = useContext(CartContext);
@@ -71,7 +72,7 @@ const ProductList = () => {
                         <p className="text-[20px] font-[500]">Общая сумма<span className="font-[700]">:</span></p>
                         <p className="text-[20px] font-[500]">{totalPrice} $</p>
                     </div>
-                    <div className="flex"><GreenBtn className="mt-[70px] ml-auto w-[236px]">Оформить заказ</GreenBtn></div>
+                    <Link to='/order' className="flex"><GreenBtn className="mt-[70px] ml-auto w-[236px]">Оформить заказ</GreenBtn></Link>
                 </div>
             )}
         </div>

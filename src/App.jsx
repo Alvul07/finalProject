@@ -18,6 +18,8 @@ import Bag from "./components/Bag/Bag"
 import { CartProvider } from "./components/Bag/ProductAdd"
 import ErrorBoundary from "./components/ErrorBoundary"
 import ProductList from "./components/Bag/ProductList"
+import OrderTake from "./components/Order/OrderTake"
+import OrderSuccess from "./components/Order/OrderSuccess"
 
 function App() {
 
@@ -44,6 +46,8 @@ function App() {
               <Route path="/bagAdd/:title" element={<BagAdd />} />
               <Route path="/bag" element={<Bag />} />
               <Route path="/cart" element={<ProductList />} />
+              <Route path="/order" element={<OrderTake />} />
+              <Route path="/orderSuccess" element={<OrderSuccess />} />
             </Routes>
           </Router>
         </CartProvider>
